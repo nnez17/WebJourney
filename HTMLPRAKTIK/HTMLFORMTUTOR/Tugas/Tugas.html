@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran Siswa</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="main.js" defer></script>
+  <body>
+    <h1>Form Pendaftaran Siswa Baru</h1>
+    <p>
+      Isilah formulir berikut sesuai dengan data diri Anda untuk melanjutkan
+      mendaftar sebagai siswa baru.
+    </p>
+    <br />
+
+    <form action="">
+      <!-- Identitas Siswa -->
+      <div class="group">
+        <h2 class="group-title">Identitas Siswa</h2>
+        <label for="nisn">NISN:</label> <br />
+        <input type="text" id="nisn" name="nisn" placeholder="NISN" /> <br />
+        <br />
+
+        <label for="name">Nama Lengkap: *</label> <br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Nama sesuai akta"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="gender">Jenis Kelamin: *</label> <br />
+        <select id="gender" size="1" required>
+          <option value="" disabled selected>-- Pilih --</option>
+          <option value="male">Laki-laki</option>
+          <option value="female">Perempuan</option>
+        </select>
+        <br /><br />
+
+        <label for="birthplace">Tempat Lahir: *</label> <br />
+        <input
+          type="text"
+          id="birthplace"
+          name="birthplace"
+          placeholder="Kota/Kabupaten"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="birthdate">Tanggal Lahir: *</label> <br />
+        <input type="date" id="birthdate" name="birthdate" required /> <br />
+      </div>
+
+      <!-- Alamat -->
+      <div class="group">
+        <h2 class="group-title">Alamat</h2>
+        <label for="address">Alamat Lengkap: *</label> <br />
+        <textarea
+          name="address"
+          id="address"
+          placeholder="Jalan, RT/RW, Desa/Kelurahan, Kecamatan, Kota/Kabupaten"
+          required
+          cols="30"
+          rows="5"
+        ></textarea>
+        <br />
+        <br />
+
+        <label for="postal_code">Kode Pos:</label> <br />
+        <input
+          type="text"
+          id="postal_code"
+          name="postal_code"
+          placeholder="xxxxx"
+        />
+      </div>
+
+      <!-- Kontak -->
+      <div class="group">
+        <h2 class="group-title">Kontak</h2>
+        <label for="email">Email</label> <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="your-email1123@example.id"
+        />
+        <br />
+        <br />
+
+        <label for="telp">Nomor Telepon/HP: *</label> <br />
+        <input
+          type="tel"
+          id="telp"
+          name="telp"
+          placeholder="+62 812-3456-7890"
+          required
+        />
+      </div>
+
+      <!-- Pendidikan Sebelumnya -->
+      <div class="group">
+        <h2 class="group-title">Pendidikan Sebelumnya</h2>
+        <label for="previous_school">Sekolah Asal: *</label> <br />
+        <input
+          type="text"
+          id="previous_school"
+          name="previous_school"
+          placeholder="Sekolah Dasar / Madrasah"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="graduation_year">Tahun Lulus: *</label> <br />
+        <input
+          type="number"
+          id="graduation_year"
+          name="graduation_year"
+          placeholder="2025"
+          required
+        />
+      </div>
+
+      <!-- Data Wali / Orang Tua -->
+      <div class="group">
+        <h2 class="group-title">Data Wali / Orang Tua</h2>
+        <label for="parent_name">Nama Wali / Orang Tua: *</label> <br />
+        <input
+          type="text"
+          id="parent_name"
+          name="parent_name"
+          placeholder="Nama lengkap"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="parent_job">Pekerjaan Wali:</label> <br />
+        <input
+          type="text"
+          id="parent_job"
+          name="parent_job"
+          placeholder="Petani / PNS / Wiraswasta / dll."
+        />
+        <br />
+        <br />
+
+        <label for="parent_contact">Nomor Telepon/HP Wali:</label> <br />
+        <input
+          type="tel"
+          id="parent_contact"
+          name="parent_contact"
+          placeholder="+62 812-3456-7890"
+        />
+      </div>
+
+      <!-- Lampiran -->
+      <div class="group">
+        <h2 class="group-title">Lampiran</h2>
+        <label for="photo">Foto 3x4:</label> <br />
+        <input type="file" id="photo" name="photo" accept="image/*" required />
+        <br />
+        <br />
+
+        <label for="transcript">Akta Kelahiran / Ijazah:</label> <br />
+        <input
+          type="file"
+          id="transcript"
+          name="transcript"
+          accept="application/pdf,image/*"
+          required
+        />
+      </div>
+
+      <!-- Pernyataan -->
+      <div class="group">
+        <h2 class="group-title">Pernyataan</h2>
+        <input type="checkbox" id="agreement" name="agreement" required />
+        <label for="agreement"
+          >Dengan ini saya menyatakan bahwa data yang saya isi adalah benar dan
+          dapat dipertanggungjawabkan.</label
+        >
+      </div>
+
+      <div>
+        <input type="submit" value="Kirim Pendaftaran" />
+        <input type="reset" value="Reset Form" />
+      </div>
+    </form>
+  </body>
+</html>

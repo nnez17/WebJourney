@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio</title>
+  </head>
+  <body>
+    <h2>Audio Mykisahh</h2>
+    <audio id="myAudio" src="Audio/mykisahbeneran.mp3" controls></audio>
+    <br />
+    <button onclick="PlayAudio()">Play</button>
+    <button onclick="PauseAudio()">Pause</button>
+    <button onclick="StopAudio()">Stop</button>
+    <script>
+      function PlayAudio() {
+        document.getElementById("myAudio").play();
+      }
+      function PauseAudio() {
+        document.getElementById("myAudio").pause();
+      }
+      function StopAudio() {
+        document.getElementById("myAudio").pause();
+        document.getElementById("myAudio").currentTime = 0;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Canvas</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+
+      // Draw a circle
+      ctx.beginPath();
+      ctx.arc(200, 200, 50, 0, Math.PI * 2);
+      ctx.fillStyle = "red";
+      ctx.fill();
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = "blue";
+      ctx.stroke();
+
+      // Draw a rectangle
+      ctx.fillStyle = "green";
+      ctx.fillRect(50, 50, 200, 200);
+      ctx.lineWidth = 5;
+      ctx.strokeRect(50, 50, 200, 200);
+
+      // Draw a diagonal line
+      ctx.beginPath();
+      ctx.moveTo(50, 350);
+      ctx.lineTo(350, 50);
+      ctx.strokeStyle = "yellow";
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    </script>
+  </body>
+</html>

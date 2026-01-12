@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Video My kisah eith JavaScript</h2>
+    <video id="myVid" width="400" controls>
+      <source src="video/mykisah.webm" type="video/webm" />
+    </video>
+
+    <button onclick="playVideo()">Play</button>
+    <button onclick="pauseVideo()">Pause</button>
+
+    <script>
+      function playVideo() {
+        document.getElementById("myVid").play();
+      }
+      function pauseVideo() {
+        document.getElementById("myVid").pause();
+      }
+    </script>
+  </body>
+</html>
