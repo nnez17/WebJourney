@@ -1,11 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Pendaftaran Siswa</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="main.js" defer></script>
+    <style>
+      div.group {
+        border: 1.75px gray solid;
+        border-radius: 3px;
+        padding: 1rem;
+      }
+
+      h2.group-title {
+        position: absolute;
+        transform: translateY(-40px);
+        font-size: medium;
+        font-weight: 600;
+        background-color: white;
+        padding: 0 0.5rem;
+      }
+
+      input:not([type="file"]),
+      select {
+        padding: 0.25rem;
+        border: 1px solid gray;
+        border-radius: 3px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    </style>
+  </head>
   <body>
     <h1>Form Pendaftaran Siswa Baru</h1>
     <p>
