@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Praktik CSS Modul 4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="main-header">
+      <div class="container header-container">
+        <div class="logo">
+          <h1>CSS<span class="highlight">Praktik</span></h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#content">Materi</a></li>
+            <li><a href="#footer">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section using vh and vw -->
+      <section id="hero">
+        <div class="hero-content">
+          <h2>Implementasi CSS Units</h2>
+          <p>
+            Membangun antarmuka web yang responsif dengan kombinasi satuan px,
+            %, em, rem, dan vw/vh.
+          </p>
+          <button class="btn-cta">Pelajari Lebih Lanjut</button>
+        </div>
+      </section>
+
+      <!-- Content Section -->
+      <section id="content">
+        <div class="container">
+          <div class="cards-grid">
+            <!-- Card 1 -->
+            <article class="card">
+              <h3>Satuan Absolut (px)</h3>
+              <p>
+                Pixel (px) adalah satuan tetap yang ideal untuk elemen yang
+                membutuhkan presisi tinggi seperti border atau shadow.
+              </p>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+              <h3>Satuan Relatif (%, em, rem)</h3>
+              <p>
+                Menggunakan %, em, dan rem memungkinkan elemen menyesuaikan diri
+                dengan ukuran font atau elemen induknya.
+              </p>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+              <h3>Viewport (vh/vw)</h3>
+              <p>
+                Satuan viewport membuat layout beradaptasi secara dinamis
+                terhadap ukuran layar perangkat pengguna.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p>&copy; 2024 Tugas CSS Modul 4 - Desain Web Modern.</p>
+    </footer>
+  </body>
+</html>

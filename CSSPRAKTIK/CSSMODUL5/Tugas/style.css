@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background: #200035;
+  background: linear-gradient(
+    90deg,
+    rgba(32, 0, 53, 1) 50%,
+    rgba(89, 0, 148, 1) 100%,
+    rgba(138, 43, 226, 1) 100%
+  );
+  color: #f8fafc;
+  font-family: "Helvetica", "Arial", sans-serif;
+  text-align: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.figura {
+  background: transparent;
+  border: 2px solid #f8fafc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.figura p {
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  color: #f8fafc;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.figura img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+#figura1 {
+  border-radius: 40px;
+}
+#figura1 img {
+  border-radius: 30px;
+}
+
+#figura2 {
+  border-radius: 60px 10px;
+}
+#figura2 img {
+  border-radius: 50px 5px;
+}
+
+#figura3 {
+  border-radius: 80px 20px 40px;
+}
+#figura3 img {
+  border-radius: 70px 15px 30px;
+}
+
+#figura4 {
+  border-radius: 100px 40px 15px 60px;
+}
+#figura4 img {
+  border-radius: 90px 30px 10px 50px;
+}
+
+@media (max-width: 600px) {
+  .figura img {
+    width: 150px;
+    height: 150px;
+  }
+}

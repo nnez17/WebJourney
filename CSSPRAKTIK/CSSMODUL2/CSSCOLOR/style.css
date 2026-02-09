@@ -1,0 +1,23 @@
+.nama-warna {
+  color: red;
+}
+
+.rgb {
+  color: rgb(0, 128, 255);
+}
+
+.rgba {
+  color: rgba(255, 0, 0, 0.3);
+}
+
+.hsl {
+  color: hsl(120, 100%, 30%);
+}
+
+.hsla {
+  color: hsla(200, 100%, 50%, 0.4);
+}
+
+.hex {
+  color: #f0f;
+}
