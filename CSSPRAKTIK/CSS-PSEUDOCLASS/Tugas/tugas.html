@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas CSS Pseudo-class - Navigation Menu</title>
+    <style>
+      /* Base Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 40px;
+        background-color: #ffffff;
+      }
+
+      /* Container Navigasi */
+      nav {
+        display: block;
+      }
+
+      /* Main Menu */
+      nav > ul {
+        list-style: none;
+        background: #ff8c00; /* DarkOrange */
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+      }
+
+      /* Item Menu Utama */
+      nav > ul > li {
+        display: block;
+        float: left;
+        position: relative;
+        transition: background 0.3s ease;
+      }
+
+      /* Link Menu */
+      nav a {
+        display: block;
+        padding: 15px 30px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        min-width: 100px;
+        text-align: center;
+      }
+
+      /* Hover pada Menu Utama */
+      nav > ul > li:hover {
+        background: #ff0000; /* Red */
+      }
+
+      /* Submenu */
+      ul.submenu {
+        list-style: none;
+        background: #ffa500; /* Orange */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none; /* Sembunyikan secara default */
+        z-index: 10;
+      }
+
+      /* Item Submenu */
+      ul.submenu li {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      ul.submenu a {
+        text-align: left;
+        padding: 12px 20px;
+        font-weight: normal;
+      }
+
+      /* Hover pada Submenu */
+      ul.submenu li:hover {
+        background: #ff0000; /* Red */
+      }
+
+      /* Tampilkan Submenu saat Hover pada Parent */
+      nav > ul > li:hover > ul.submenu {
+        display: block;
+      }
+
+      /* Clearfix untuk float */
+      nav > ul::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">One</a>
+          <!-- Submenu untuk navigasi One -->
+          <ul class="submenu">
+            <li><a href="#">Sub-1</a></li>
+            <li><a href="#">Sub-2</a></li>
+            <li><a href="#">Sub-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Two</a></li>
+        <li>
+          <a href="#">Three</a>
+          <!-- Submenu untuk navigasi Three -->
+          <ul class="submenu">
+            <li><a href="#">Sub-1</a></li>
+            <li><a href="#">Sub-2</a></li>
+            <li><a href="#">Sub-3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
